@@ -1,6 +1,6 @@
 @import "../../../assets/styles/variables";
 .card {
-  max-width: 1200px;
+  width: 70vw;
   border-radius: 15px;
   overflow: hidden;
   background-color: #f5f6f9;
@@ -9,35 +9,9 @@
 .get-help {
   color: $primary-color;
 }
-.blockquote-container {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 90%;
-  bottom: 5%;
-  inset-inline-start: 20%;
-  opacity: 0.9;
-  z-index: 99;
-}
-
-.quotes {
-  position: absolute;
-
-  left: -38px;
-  top: -39px;
-}
-
-.blockquote-footer {
-  margin-top: 10px;
-  color: #6c757d;
-}
 
 .form-container {
-  padding: 25px 70px;
+  padding: 25px 50px;
 }
 
 h2 {
@@ -67,9 +41,12 @@ p {
 a {
   text-decoration: none;
 }
-
+.selectedType {
+  background-color: $label-color;
+  color: white;
+}
 label {
-  font-size: 14px;
+  font-size: 12px;
   color: $label-color;
 }
 .heading-container {
@@ -87,7 +64,7 @@ label {
   border-radius: 4px !important;
 }
 .form-control::placeholder {
-  font-size: 36px;
+  font-size: 12px;
   color: $text-color;
 }
 
@@ -100,7 +77,14 @@ label {
   border-radius: 8px;
   background: linear-gradient(to bottom, #6959cb00, #635ca8);
   opacity: 0.5;
+  pointer-events: none;
 }
+
+.left-side {
+  background: url("../../../assets/images/side.png") no-repeat center center;
+  background-size: auto;
+}
+
 input.form-control::placeholder {
   color: #6c757d;
   opacity: 1;

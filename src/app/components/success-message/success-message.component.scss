@@ -1,0 +1,37 @@
+.card {
+  width: 65vw;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 75vh;
+  background-color: #f5f6f9;
+}
+
+@keyframes draw-circle {
+  0% {
+    stroke-dasharray: 0, 282.74;
+  }
+  100% {
+    stroke-dasharray: 282.74, 282.74;
+  }
+}
+
+@keyframes draw-check {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+  100% {
+    stroke-dasharray: 100, 100;
+  }
+}
+
+#checkmark svg circle {
+  stroke-dasharray: 282.74, 282.74;
+  stroke-dashoffset: 0;
+  animation: draw-circle 1s ease-in-out forwards;
+}
+
+#checkmark svg polyline {
+  stroke-dasharray: 100, 100;
+  stroke-dashoffset: 0;
+  animation: draw-check 1s ease-in-out 1s forwards;
+}
